@@ -161,6 +161,6 @@ function sendSmsMessage(message) {
 
 return new CronJob('*/4 * * * *', function() {
   //console.log('You will see this message every 30 minute');
-  // return letsMakeSomeMoney();
-  return sendSmsMessage('test message')
+  return letsMakeSomeMoney();
+  //return sendSmsMessage('test message')
 }, null, true, 'America/Los_Angeles');
