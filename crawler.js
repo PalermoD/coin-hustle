@@ -8,11 +8,11 @@ var _LIST='';
 var _BinanceUrl= 'https://support.binance.com/hc/en-us/categories/115000056351-Announcements';
 
 var CronJob = require('cron').CronJob;
-
+var Zport = process.env.PORT || 80;
 
 
 const server = new Hapi.Server();
-server.connection({ port: 5000, host: 'localhost' });
+server.connection({ port: Zport});
 
 server.start((err) => {
 
