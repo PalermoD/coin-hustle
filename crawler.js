@@ -11,8 +11,8 @@ var CronJob = require('cron').CronJob;
 var Zport = process.env.PORT || 80;
 
 
-const server = new Hapi.Server();
-server.connection({ port: Zport});
+
+var server = new Hapi.Server(~~process.env.PORT || 3000, '0.0.0.0');
 
 server.start((err) => {
 
