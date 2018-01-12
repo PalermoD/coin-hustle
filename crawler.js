@@ -59,7 +59,7 @@ function sendSmsMessage(message) {
   );
 }
 
-return new CronJob('0,30 * * * *', function() {
+return new CronJob('*/4 * * * *', function() {
   //console.log('You will see this message every 30 minute');
   return letsMakeSomeMoney();
 }, null, true, 'America/Los_Angeles');
